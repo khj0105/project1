@@ -1,0 +1,60 @@
+/* 폼 전체 컨테이너 */
+.register-form-container {
+  max-width: 460px;
+  margin: 60px auto;
+  padding: 40px 32px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* 제목 스타일 */
+.register-form-container h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 폼 본문 구조 */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* input, select 공통 스타일 */
+.register-form input,
+.register-form select {
+  padding: 14px 16px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: border-color 0.2s ease;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  outline: none;
+  border-color: var(--main-blue, #357ae1);
+  background-color: #fff;
+}
+
+/* 버튼 스타일 */
+.register-form button {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--main-blue, #357ae1);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.register-form button:hover {
+  background-color: #245bb3;
+}

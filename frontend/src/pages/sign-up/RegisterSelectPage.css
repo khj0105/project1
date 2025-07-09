@@ -1,0 +1,67 @@
+/* src/pages/RegisterSelectPage.css */
+
+.register-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  min-height: 100vh;
+  background-color: #E5EBF5;
+}
+
+.register-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 600px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.register-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.register-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.option-card {
+  flex: 1;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s, background-color 0.3s;
+  background-color: #fff;
+}
+
+.option-card:hover {
+  background-color: #f0f2f5;
+  border-color: #357ae1;
+}
+
+.option-card.active {
+  border-color: #357ae1;
+  background-color: #e9f0fb;
+}
+
+.option-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.option-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}

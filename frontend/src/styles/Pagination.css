@@ -1,0 +1,103 @@
+/* src/styles/Pagination.css */
+
+.pagination-container {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .pagination-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: #374151;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .pagination-btn:hover:not(.pagination-disabled) {
+    background-color: #f9fafb;
+  }
+  
+  .pagination-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+  
+  .pagination-page {
+    min-width: 2.5rem;
+    justify-content: center;
+  }
+  
+  .pagination-current {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+  }
+  
+  .pagination-current:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+  }
+  
+  .pagination-nav {
+    white-space: nowrap;
+  }
+  
+  .pagination-disabled {
+    background-color: #f3f4f6;
+    color: #9ca3af;
+    cursor: not-allowed;
+    border-color: #e5e7eb;
+  }
+  
+  .pagination-disabled:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .pagination-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .pagination-ellipsis {
+    padding: 0 0.5rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  /* 반응형 */
+  @media (max-width: 768px) {
+    .pagination-wrapper {
+      gap: 0.25rem;
+    }
+    
+    .pagination-btn {
+      padding: 0.375rem 0.5rem;
+      font-size: 0.75rem;
+    }
+    
+    .pagination-page {
+      min-width: 2rem;
+    }
+    
+    .pagination-nav span {
+      display: none;
+    }
+    
+    .pagination-icon {
+      width: 0.875rem;
+      height: 0.875rem;
+    }
+  }

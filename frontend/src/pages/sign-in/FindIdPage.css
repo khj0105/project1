@@ -1,0 +1,74 @@
+.find-id-container {
+  max-width: 480px;
+  margin: 60px auto;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.find-id-container h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.find-id-sub {
+  font-size: 14px;
+  margin-bottom: 24px;
+  color: #555;
+}
+
+.find-id-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.find-id-methods label {
+  font-size: 15px;
+  cursor: pointer;
+  color: #333;
+}
+
+.find-id-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.find-id-form input {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.auth-row {
+  display: flex;
+  gap: 8px;
+}
+
+.auth-btn {
+  padding: 12px 16px;
+  font-size: 14px;
+  background-color: #357ae1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.find-id-submit {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #357ae1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

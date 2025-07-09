@@ -1,0 +1,80 @@
+.lecture-management-container {
+  padding: 32px;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 24px 0;
+}
+
+.filter-bar-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  align-items: center;
+}
+
+.filter-bar-container select,
+.filter-bar-container input {
+  padding: 12px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.filter-bar-container input {
+  min-width: 300px;
+}
+
+.filter-bar-container .search-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.page-actions {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 24px;
+}
+
+.tabs {
+  display: flex;
+  gap: 16px;
+}
+
+.tabs button {
+  padding: 12px 4px;
+  margin-bottom: -1px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  color: #888;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+
+.tabs button.active {
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+}
+
+.add-lecture-button {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-left: 24px;
+}

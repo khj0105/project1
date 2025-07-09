@@ -1,0 +1,167 @@
+.lecture-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-header {
+  display: flex;
+  padding: 12px 24px;
+  font-weight: bold;
+  color: #555;
+  font-size: 14px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.header-item {
+  flex-shrink: 0;
+}
+
+.lecture-list-item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px 24px;
+  border: 1px solid #eef0f4;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lecture-list-item:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+}
+
+.item-cell {
+  font-size: 15px;
+  color: #333;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.lecture-list-item.is-deleted {
+  opacity: 0.5;
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+}
+
+.lecture-list-item.is-deleted .item-cell {
+  text-decoration: line-through;
+}
+
+.status-deleted {
+  background-color: #6c757d;
+}
+
+
+.status-pending { background-color: #ffc107; color: #333; }
+.status-approved { background-color: #28a745; }
+.status-rejected { background-color: #dc3545; }
+
+
+.lecture-list-item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px 24px;
+  border: 1px solid #eef0f4;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lecture-list-item:not(.is-deleted) {
+    cursor: pointer;
+}
+.lecture-list-item:not(.is-deleted):hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+}
+
+.lecture-card-wrapper {
+    border: 1px solid #eef0f4;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.lecture-card-wrapper .lecture-list-item {
+    border: none;
+    border-bottom: 1px solid #eef0f4;
+}
+.lecture-card-wrapper .lecture-list-item:last-child {
+    border-bottom: none;
+}
+
+.search-mode-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-mode-actions strong {
+    color: #007bff;
+}
+
+.button-group button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border: 1px solid #007bff;
+  background-color: #fff;
+  color: #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.button-group button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.card-details {
+  padding: 15px 24px;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.card-details h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.details-table th,
+.details-table td {
+  border: 1px solid #eee;
+  padding: 8px;
+  text-align: center;
+}
+
+.details-table th {
+  background-color: #f8f9fa;
+}
